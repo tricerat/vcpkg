@@ -22,6 +22,7 @@ vcpkg_configure_cmake(
         -DADD_G3LOG_BENCH_PERFORMANCE=OFF
         -DADD_G3LOG_UNIT_TEST=OFF
         -DVERSION=${VERSION}
+        -DUSE_DYNAMIC_LOGGING_LEVELS=ON
 )
 
 vcpkg_install_cmake()
