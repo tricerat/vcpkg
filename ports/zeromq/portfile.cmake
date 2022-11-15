@@ -7,6 +7,7 @@ vcpkg_from_github(
         fix-arm.patch
         zeromq-libzmq-4310-64e6d37ab8.diff # https://patch-diff.githubusercontent.com/raw/zeromq/libzmq/pull/4310.diff
         zeromq-libzmq-4311-2b04e0ce47.diff # https://patch-diff.githubusercontent.com/raw/zeromq/libzmq/pull/4311.diff
+        add-gnutls-includedir.diff
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" BUILD_STATIC)
