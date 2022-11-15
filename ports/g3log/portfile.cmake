@@ -1,8 +1,8 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO KjellKod/g3log
-    REF 2fca06ff6da5c67465b591f4d45e8fd14d531142 #v1.3.4
-    SHA512 8dba89e5a08e44d585478470725e25e37486685d8fe4d3cb5e97c81013389c95d96bdde658244e425008169bc8a9fc2d34a065b83b110c62e73d3ccab9b2b9e1
+    REPO tricerat/g3log
+    REF ae1d71641fb740badabbd84ae2bdc3e305d7b7cd #v1.3.4
+    SHA512 eef8fb87003acd140e88ac0a25d81676e21d632afd1dd12f9fc43fd54748720ada3ca69f1320568ca433ec0ed7437bc7c907948237d4cf023277ffb570e915d1
     HEAD_REF master
 )
 
@@ -22,6 +22,7 @@ vcpkg_configure_cmake(
         -DADD_G3LOG_BENCH_PERFORMANCE=OFF
         -DADD_G3LOG_UNIT_TEST=OFF
         -DVERSION=${VERSION}
+        -DUSE_DYNAMIC_LOGGING_LEVELS=ON
 )
 
 vcpkg_install_cmake()
