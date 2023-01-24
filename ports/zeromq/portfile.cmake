@@ -5,8 +5,6 @@ vcpkg_from_github(
     SHA512 DB11FDF12D44B37CEA2F0622FA016113DA1403251C3FC92F25D2E4274E4B67F7D9985F8C33A4E476A6874545143AEA0C7DE22D954EED905F1EFCFDCD18391A2C
     PATCHES
         fix-arm.patch
-        zeromq-libzmq-4310-64e6d37ab8.diff # https://patch-diff.githubusercontent.com/raw/zeromq/libzmq/pull/4310.diff
-        zeromq-libzmq-4311-2b04e0ce47.diff # https://patch-diff.githubusercontent.com/raw/zeromq/libzmq/pull/4311.diff
         add-gnutls-includedir.diff
 )
 
