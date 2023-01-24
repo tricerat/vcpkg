@@ -1,9 +1,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO zeromq/libzmq
-    REF v4.3.4
-    SHA512 ad828b1ab5a87983285a6b44b08240816ed1c4e2c73306ab1a851bf80df1892b5e2f92064a49fbadc1f4c75043625ace77dd25b64d5d1c2a7d1d61cc916fba0b
-    PATCHES 
+    REF b674ce68d02517e593c72067794c4e3de04dbd1c
+    SHA512 DB11FDF12D44B37CEA2F0622FA016113DA1403251C3FC92F25D2E4274E4B67F7D9985F8C33A4E476A6874545143AEA0C7DE22D954EED905F1EFCFDCD18391A2C
+    PATCHES
         fix-arm.patch
         zeromq-libzmq-4310-64e6d37ab8.diff # https://patch-diff.githubusercontent.com/raw/zeromq/libzmq/pull/4310.diff
         zeromq-libzmq-4311-2b04e0ce47.diff # https://patch-diff.githubusercontent.com/raw/zeromq/libzmq/pull/4311.diff
