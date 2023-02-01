@@ -1,7 +1,7 @@
 {
   "name": "zeromq",
   "version": "4.3.4",
-  "port-version": 7,
+  "port-version": 8,
   "description": "The ZeroMQ lightweight messaging kernel is a library which extends the standard socket interfaces with features traditionally provided by specialised messaging middleware products",
   "homepage": "https://github.com/zeromq/libzmq",
   "license": "LGPL-3.0-only",
@@ -26,7 +26,12 @@
     },
     "websockets-sha1": {
       "description": "Enable WebSocket transport through builtin sha1 (libzmq#3676)",
-      "dependencies": ["libgnutls"]
+      "dependencies": [
+        {
+          "name": "libgnutls",
+          "platform": "!windows"
+        }
+      ]
     }
   }
 }
